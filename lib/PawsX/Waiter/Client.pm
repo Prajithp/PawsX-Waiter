@@ -12,7 +12,7 @@ use Data::Structure::Util qw(unbless);
 use Try::Tiny;
 
 has client => (
-    is       => 'rw',
+    is       => 'ro',
     required => 1
 );
 
@@ -29,13 +29,13 @@ has maxAttempts => (
 );
 
 has operation => (
-    is       => 'rw',
+    is       => 'ro',
     isa      => 'Str',
     required => 1,
 );
 
 has acceptors => (
-    is       => 'rw',
+    is       => 'ro',
     isa      => 'ArrayRef[HashRef]',
     required => 1,
 );

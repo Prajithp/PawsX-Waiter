@@ -4,7 +4,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-GetWaiter	lib/PawsX/Waiter.pm	15;"	s
+GetWaiter	lib/PawsX/Waiter.pm	13;"	s
 PawsX::ClassBuilder	build_waiters_config.pl	5;"	p
 PawsX::Exception::TimeOut	lib/PawsX/Waiter/Exception.pm	23;"	p
 PawsX::Waiter	lib/PawsX/Waiter.pm	1;"	p

@@ -1,4 +1,4 @@
-[submodule "lib/PawsX/botocore"]
-	path = lib/PawsX/botocore
+[submodule "botocore"]
+	path = botocore
 	url = https://github.com/pplu/botocore.git
 	branch = master

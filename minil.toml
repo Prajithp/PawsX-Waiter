@@ -1,7 +1,10 @@
 name = "PawsX-Waiter"
 # badges = ["travis"]
 authority="cpan:PRAJITH"
-
+readme_from="lib/PawsX/Waiter.pm"
 module_maker="ModuleBuildTiny"
 static_install = "auto"
-
+[release]
+do_not_upload_to_cpan=true
+[FileGatherer]
+exclude_match = ['^botocore*']

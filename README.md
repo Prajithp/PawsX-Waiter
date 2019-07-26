@@ -3,9 +3,7 @@
 PawsX::Waiter - A Waiter library for Paws
 
 # SYNOPSIS
-
-      use Paws;
-      use PawsX::Waiter;
+    use PawsX::Waiter;
 
       my $client = Paws->new(
          config => {
@@ -30,31 +28,59 @@ PawsX::Waiter - A Waiter library for Paws
         }
       );
       
+
 # DESCRIPTION
 
-Waiters are utility methods that poll for a particular state to occur on a client. Waiters can fail after a number of attempts at a polling interval defined for the service client. 
+Waiters are utility methods that poll for a particular state to occur on a client. Waiters can fail after a number of attempts at a polling interval defined for the service client.
 
-# Methods
+# METHODS
+
 ## GetWaiter
 
-      my $waiter = $service->GetWaiter('InstanceInService');
- This method returns a new PawsX::Waiter object and It has the following attributes. You can configure the waiter behaviour with this.
+    my $waiter = $service->GetWaiter('InstanceInService');
+    
 
-### delay(int $delay)
+This method returns a new PawsX::Waiter object and It has the following attributes. You can configure the waiter behaviour with this.
+
+### delay(Int)
+
+    $waiter->delay(10);
+    
 
 Number of seconds to delay between polling attempts. Each waiter has a default delay configuration value, but you may need to modify this setting for specific use cases.
 
-### maxAttempts(int $maxAttempts)
+### maxAttempts(Int)
 
-  Maximum number of polling attempts to issue before failing the waiter. Each waiter has a default maxAttempts configuration value, but you may need to modify this setting for specific use cases.
+    $waiter->maxAttempts(100);
+    
 
-# LICENSE
+Maximum number of polling attempts to issue before failing the waiter. Each waiter has a default maxAttempts configuration value, 
+but you may need to modify this setting for specific use cases.
 
-Copyright (C) Prajith Ndz.
+### wait(HashRef)
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+     $waiter->wait(
+         {
+            LoadBalancerName => 'test-elb',
+            Instances        => [ { InstanceId => 'i-0xxxxx' } ],
+        }
+      );
+
+Block until the waiter completes or fails.Note that this might throw a PawsX::Exception::\* if the waiter fails.
+
+# SEE ALSO
+
+- [Paws](https://metacpan.org/pod/Paws)
 
 # AUTHOR
 
 Prajith Ndz <prajithpalakkuda@gmail.com>
+
+# COPYRIGHT
+
+Copyright (C) Prajith Ndz.
+
+# LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
