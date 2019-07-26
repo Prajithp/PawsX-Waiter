@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+GetWaiter	lib/PawsX/Waiter.pm	13;"	s
+PawsX::ClassBuilder	build_waiters_config.pl	5;"	p
+PawsX::Exception::TimeOut	lib/PawsX/Waiter/Exception.pm	23;"	p
+PawsX::Waiter	lib/PawsX/Waiter.pm	1;"	p
+PawsX::Waiter::Client	lib/PawsX/Waiter/Client.pm	1;"	p
+PawsX::Waiter::Exception	lib/PawsX/Waiter/Exception.pm	1;"	p
+_load_json_file	build_waiters_config.pl	56;"	s
+main	build_waiters_config.pl	64;"	p
+match_error	lib/PawsX/Waiter/Client.pm	137;"	s
+match_path	lib/PawsX/Waiter/Client.pm	123;"	s
+match_pathAll	lib/PawsX/Waiter/Client.pm	149;"	s
+match_pathAny	lib/PawsX/Waiter/Client.pm	168;"	s
+match_status	lib/PawsX/Waiter/Client.pm	187;"	s
+matcher	lib/PawsX/Waiter/Client.pm	115;"	s
+operation_request	lib/PawsX/Waiter/Client.pm	43;"	s
+wait	lib/PawsX/Waiter/Client.pm	73;"	s
