@@ -8,7 +8,7 @@ use JSON;
 use Path::Tiny;
 use PawsX::Waiter::Client;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 sub GetWaiter {
     my ( $self, $waiter ) = @_;
